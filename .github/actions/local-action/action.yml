@@ -1,0 +1,11 @@
+name: "local-action"
+description: Grading action for local exercise
+author: githubtraining
+inputs:
+  event_ctx:
+    description: event object from the github context
+    required: true
+
+runs:
+  using: node12
+  main: "dist/index.js"
